@@ -1,0 +1,97 @@
+
+==========================================================
+MacOS or linux terminal command to create your ssh tunnel:
+ssh -N -L 9328:node002:9328 MYUSERNAME@ada.middlebury.edu
+
+Forwarded port: same as remote port
+Remote server: node002
+Remote port: 9328
+SSH server: ada.middlebury.edu
+SSH login: MYUSERNAME
+SSH port: 22
+
+Use a Browser on your local machine to go to:
+https://9328  (prefix w/ https:// if using password)
+==========================================================
+
+
+# >>>>>>>>>>>>>>>>>>>>>> ERROR REPORT <<<<<<<<<<<<<<<<<<<<<<
+
+    Traceback (most recent call last):
+      File "/usr/lib/python3.9/site-packages/conda/gateways/connection/__init__.py", line 8, in <module>
+        from requests import ConnectionError, HTTPError, Session
+      File "/home/jliem/.local/lib/python3.9/site-packages/requests/__init__.py", line 151, in <module>
+        from . import packages, utils
+      File "/home/jliem/.local/lib/python3.9/site-packages/requests/utils.py", line 24, in <module>
+        from . import certs
+      File "/home/jliem/.local/lib/python3.9/site-packages/requests/certs.py", line 14, in <module>
+        from certifi import where
+    ModuleNotFoundError: No module named 'certifi'
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/lib/python3.9/site-packages/conda/exceptions.py", line 1125, in __call__
+        return func(*args, **kwargs)
+      File "/usr/lib/python3.9/site-packages/conda/cli/main.py", line 86, in main_subshell
+        exit_code = do_call(args, p)
+      File "/usr/lib/python3.9/site-packages/conda/cli/conda_argparse.py", line 91, in do_call
+        module = import_module(relative_mod, __name__.rsplit('.', 1)[0])
+      File "/usr/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+        return _bootstrap._gcd_import(name[level:], package, level)
+      File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+      File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+      File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+      File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+      File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+      File "/usr/lib/python3.9/site-packages/conda/cli/main_info.py", line 19, in <module>
+        from ..core.index import _supplement_index_with_system
+      File "/usr/lib/python3.9/site-packages/conda/core/index.py", line 14, in <module>
+        from .package_cache_data import PackageCacheData
+      File "/usr/lib/python3.9/site-packages/conda/core/package_cache_data.py", line 16, in <module>
+        from .path_actions import CacheUrlAction, ExtractPackageAction
+      File "/usr/lib/python3.9/site-packages/conda/core/path_actions.py", line 30, in <module>
+        from ..gateways.connection.download import download
+      File "/usr/lib/python3.9/site-packages/conda/gateways/connection/__init__.py", line 21, in <module>
+        from pip._vendor.requests import ConnectionError, HTTPError, Session
+    ModuleNotFoundError: No module named 'pip'
+
+`$ /bin/conda info --base`
+
+
+An unexpected error has occurred. Conda has prepared the above report.
+
+[W 2025-04-21 00:51:49.496 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2025-04-21 00:51:49.795 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-04-21 00:51:49.799 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-04-21 00:51:49.804 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-04-21 00:51:49.810 ServerApp] notebook | extension was successfully linked.
+[I 2025-04-21 00:51:50.546 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-04-21 00:51:50.595 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-04-21 00:51:50.598 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-04-21 00:51:50.599 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-04-21 00:51:50.623 LabApp] JupyterLab extension loaded from /home/jliem/.conda/envs/collab/lib/python3.13/site-packages/jupyterlab
+[I 2025-04-21 00:51:50.623 LabApp] JupyterLab application directory is /home/jliem/.conda/envs/collab/share/jupyter/lab
+[I 2025-04-21 00:51:50.624 LabApp] Extension Manager is 'pypi'.
+[I 2025-04-21 00:51:50.658 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-04-21 00:51:50.673 ServerApp] notebook | extension was successfully loaded.
+[I 2025-04-21 00:51:50.673 ServerApp] Serving notebooks from local directory: /home/jliem/CS442/collabNetworks
+[I 2025-04-21 00:51:50.673 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-04-21 00:51:50.673 ServerApp] http://node002:9328/tree?token=957ba389cf205ab794c9d3925da0747c717cfd0fafae7d6e
+[I 2025-04-21 00:51:50.673 ServerApp]     http://127.0.0.1:9328/tree?token=957ba389cf205ab794c9d3925da0747c717cfd0fafae7d6e
+[I 2025-04-21 00:51:50.673 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-04-21 00:51:50.683 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/jliem/.local/share/jupyter/runtime/jpserver-223482-open.html
+    Or copy and paste one of these URLs:
+        http://node002:9328/tree?token=957ba389cf205ab794c9d3925da0747c717cfd0fafae7d6e
+        http://127.0.0.1:9328/tree?token=957ba389cf205ab794c9d3925da0747c717cfd0fafae7d6e
+[I 2025-04-21 00:51:50.934 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-04-21 00:52:39.064 ServerApp] Kernel started: 5ce26e77-28b6-417e-9aec-f88dc4856dd0
+[I 2025-04-21 00:52:40.348 ServerApp] Connecting to kernel 5ce26e77-28b6-417e-9aec-f88dc4856dd0.
+[I 2025-04-21 00:52:40.399 ServerApp] Connecting to kernel 5ce26e77-28b6-417e-9aec-f88dc4856dd0.
+[I 2025-04-21 00:52:40.425 ServerApp] Connecting to kernel 5ce26e77-28b6-417e-9aec-f88dc4856dd0.
+[I 2025-04-21 00:52:46.063 ServerApp] Connecting to kernel 5ce26e77-28b6-417e-9aec-f88dc4856dd0.
+[I 2025-04-21 00:54:39.018 ServerApp] Saving file at /ExploratoryAnalysis.ipynb

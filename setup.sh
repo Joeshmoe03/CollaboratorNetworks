@@ -1,15 +1,24 @@
 #!/bin/bash
 set -e
 
-# Create and initialize conda environment
+# Check if conda is available
+if ! command -v conda &> /dev/null; then
+    echo "conda could not be found. Please install conda and try again."
+    exit 1
+fi
+
+# Create and initialize conda environment if not already created
 if ! conda info --envs | grep -q "^collab"; then
     echo "Creating conda environment 'collab'..."
     conda create -n collab -y
 fi
 
-# Install packages using conda run (avoids shell issues)
+# Install packages inside the 'collab' environment
 echo "Installing required Python packages..."
-conda run -n collab pip install numpy igraph networkx matplotlib pandas
+conda run -n collab conda install -y jupyter matplotlib pandas
+
+# Install igraph via pip (since it's not available through conda)
+conda run -n collab pip install igraph networkx numpy
 
 # Create psoriasis data directory
 mkdir -p data/psoriasis
