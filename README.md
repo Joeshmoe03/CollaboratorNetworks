@@ -18,13 +18,21 @@ conda activate collab
 pip list
 ```
 
+If not, with conda environment activated:
+```
+pip install YOUR_PACKAGE
+```
+Or if you are able to open the Notebook by following the step below, in a jupyter notebook cell:
+```
+!pip install YOUR_PACKAGE
+```
+
 ## Running the Notebook on the Cluster
 
 From the correct directory level, run:
 ```
 sbatch launchNotebook.sh
-cd logs
-more jupyter-notebook.log
+more logs/jupyter-notebook.log
 ```
 
 You should see something like this:
@@ -45,12 +53,12 @@ https://9328  (prefix w/ https:// if using password)
 ==========================================================
 ```
 
-Copy the ssh line **from the log file** and replace in your username inplace of MYUSERNAME. For example:
+Copy the ssh line as seen above **from the log file** (NOT from this README) and replace MYUSERNAME with your username. For example:
 ```
 ssh -N -L 9328:node002:9328 jliem@ada.middlebury.edu
 ```
 
-In a new terminal paste line you copied **from the log file** (not from here). It should prompt you to log in. **DO NOT CLOSE THIS TERMINAL WHILE WORKING ON YOUR NOTEBOOK**. This is your tunnel into the cluster from your local machine.
+In a new terminal paste the above ssh line you formatted **from the log file** (not from README). It should prompt you to log in. **DO NOT CLOSE THIS TERMINAL WHILE WORKING ON YOUR NOTEBOOK**. This is your tunnel into the cluster from your local machine.
 
 In a browser of your choice paste in the line that appears **IN THE LOG FILE** that looks something like this:
 ```
