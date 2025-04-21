@@ -4,7 +4,7 @@ Authors: Josef Liem, Frannie Cataldo, An Adhikari
 
 ## Setting Things Up for the First Time
 
-In the terminal where you have cloned this repository:
+In the terminal **ON THE CLUSTER** where you have cloned this repository:
 ```
 chmod +x setup.sh
 ./setup.sh
