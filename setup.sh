@@ -15,10 +15,10 @@ fi
 
 # Install packages inside the 'collab' environment
 echo "Installing required Python packages..."
-conda run -n collab conda install -y jupyter matplotlib pandas
+conda run -n collab conda install -y jupyter
 
 # Install igraph via pip (since it's not available through conda)
-conda run -n collab pip install igraph networkx numpy
+conda run -n collab pip install igraph networkx numpy matplotlib pandas
 
 # Create psoriasis data directory
 mkdir -p data/psoriasis
