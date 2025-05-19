@@ -2,6 +2,8 @@
 
 Authors: Josef Liem, Frannie Cataldo, An Adhikari
 
+[Paper](overleaf/CollaboratorNetworksReport.pdf)
+
 ## Setting Things Up for the First Time
 
 In the terminal **ON THE CLUSTER** where you have cloned this repository:
