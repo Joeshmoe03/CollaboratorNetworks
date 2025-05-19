@@ -18,7 +18,7 @@ node=$(hostname -s)
 echo -e "
 ==========================================================
 MacOS or linux terminal command to create your ssh tunnel:
-ssh -N -L ${port}:${node}:${port} MYUSERNAME@ada.middlebury.edu
+ssh -N -L ${port}:${node}:${port} jliem@ada.middlebury.edu
 
 Forwarded port: same as remote port
 Remote server: ${node}
