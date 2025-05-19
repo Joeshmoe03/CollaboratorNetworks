@@ -3,7 +3,7 @@
 Authors: Josef Liem, Frannie Cataldo, An Adhikari
 
 ## Our Paper
-##[📄 View the paper](overleaf/CollaboratorNetworksReport.pdf)##
+[**📄 View the paper**](overleaf/CollaboratorNetworksReport.pdf)
 
 ## Setting Things Up for the First Time
 
