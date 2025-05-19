@@ -47,7 +47,7 @@ ssh -N -L 1234:node123:1234 MYUSERNAME@ada.middlebury.edu
 Forwarded port: same as remote port
 Remote server: node123
 Remote port: 1234
-SSH server: ada.middlebury.edu
+SSH server: clusteraddress.edu
 SSH login: MYUSERNAME
 SSH port: 12
 
@@ -58,12 +58,12 @@ https://1234  (prefix w/ https:// if using password)
 
 Copy the ssh line as seen above **from the log file** (NOT from this README) and replace MYUSERNAME with your username. For example:
 ```
-ssh -N -L 9328:node002:9328 jliem@ada.middlebury.edu
+ssh -N -L 1234:node123:1234 johnsmith@clusteraddress.edu
 ```
 
 In a new terminal paste the above ssh line you formatted **from the log file** (not from README). It should prompt you to log in. **DO NOT CLOSE THIS TERMINAL WHILE WORKING ON YOUR NOTEBOOK**. This is your tunnel into the cluster from your local machine.
 
 In a browser of your choice paste in the line that appears **IN THE LOG FILE** that looks something like this:
 ```
-http://127.0.0.1:1234/tree?token=aksjdhkajhsdkashjdbkasjhdkjas...kajsdhskjhd
+http://127.0.0.1:1234/tree?token=thisismysecrettokenhahaha
 ```
