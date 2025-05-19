@@ -3,6 +3,11 @@
 Authors: Josef Liem, Frannie Cataldo, An Adhikari
 
 ## Our Paper
+
+### Abstract
+
+Studying scientific collaboration practices provides important insight into how impactful research is generated within academic disciplines. Using bibliometric datasets, we applied a network-based approach to analyzing and understanding co-authorship structures in medical research on psoriasis, and computer science (CS). We examined metrics such as degree assortativity, centrality, and cluster to asses author collaborations and their relationships with scholarly impact for metrics like relative citation ratio (RCR), NIH percentile, total citations for the health science, and h-index for computer science. We compared our metrics against null models generated through Chung-Lu and preferential attachment methods. Our analysis demonstrated that both the CS research and psoriasis research networks exhibited stronger degree assortativity than by chance, suggesting selective patterns of collaboration, largely clustered by nationality. Moreover, the collaboration centrality strongly correlated to previously mentioned metrics for author success. We further employed machine learning methods to quantify authors' publication success based solely on network structural features, which accounted for nearly 50\% of the variance in author impact. The number of collaborators emerged as the strongest individual predictor. These results offer critical insight into the underlying dynamics of collaboration among influential scientists in the fields of CS and medicine.
+
 [**📄 View the paper**](overleaf/CollaboratorNetworksReport.pdf)
 
 ## Setting Things Up for the First Time
