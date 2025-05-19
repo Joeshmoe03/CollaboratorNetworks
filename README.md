@@ -42,17 +42,17 @@ You should see something like this:
 ```
 ==========================================================
 MacOS or linux terminal command to create your ssh tunnel:
-ssh -N -L 9328:node002:9328 MYUSERNAME@ada.middlebury.edu
+ssh -N -L 1234:node123:1234 MYUSERNAME@ada.middlebury.edu
 
 Forwarded port: same as remote port
-Remote server: node002
-Remote port: 9328
+Remote server: node123
+Remote port: 1234
 SSH server: ada.middlebury.edu
 SSH login: MYUSERNAME
-SSH port: 22
+SSH port: 12
 
 Use a Browser on your local machine to go to:
-https://9328  (prefix w/ https:// if using password)
+https://1234  (prefix w/ https:// if using password)
 ==========================================================
 ```
 
@@ -65,5 +65,5 @@ In a new terminal paste the above ssh line you formatted **from the log file** (
 
 In a browser of your choice paste in the line that appears **IN THE LOG FILE** that looks something like this:
 ```
-http://127.0.0.1:9328/tree?token=957ba389cf205ab794c9d3925da0747c717cfd0fafae7d6e
+http://127.0.0.1:1234/tree?token=aksjdhkajhsdkashjdbkasjhdkjas...kajsdhskjhd
 ```
